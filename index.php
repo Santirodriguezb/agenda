@@ -8,8 +8,10 @@ if($db==false){
     echo "Hubo problemas conectando";
 }
 
+cabeceira();
 $contactos = listarContactos($db);
 mostrarContactos($contactos);
+pe();
 
 if(!desconectar($db)){
     echo "Hubo problemas desconectando";

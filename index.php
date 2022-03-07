@@ -8,10 +8,15 @@ if($db==false){
     echo "Hubo problemas conectando";
 }
 
-cabeceira();
+
+pintarCabeceira();
 $contactos = listarContactos($db);
 mostrarContactos($contactos);
-pe();
+
+pintarPe();
+
+echo "<a href='agregar_contacto.php'>Agregar contacto</a>";
+
 
 if(!desconectar($db)){
     echo "Hubo problemas desconectando";

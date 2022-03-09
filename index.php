@@ -12,10 +12,9 @@ if($db==false){
 pintarCabeceira();
 $contactos = listarContactos($db);
 mostrarContactos($contactos);
-
+echo "<a href='agregar_contacto.php'>Agregar contacto</a>";
 pintarPe();
 
-echo "<a href='agregar_contacto.php'>Agregar contacto</a>";
 
 
 if(!desconectar($db)){

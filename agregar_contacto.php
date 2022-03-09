@@ -27,7 +27,7 @@ function validarFormulario($n,$a, $t, $c){
         array_push($errs, "El correo no puede quedar vacío");
     }
     if(!filter_var($c,FILTER_VALIDATE_EMAIL)){
-        array_push($errs, "El formato de teléfono no es válido");
+        array_push($errs, "El formato de correo no es válido");
     }
     return $errs;
 }
